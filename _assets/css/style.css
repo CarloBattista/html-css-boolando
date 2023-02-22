@@ -75,6 +75,10 @@ body {
     justify-content: space-between;
 }
 
+.flexd-column{
+    flex-direction: column;
+}
+
 .margin-80{
     width: 80%;
     margin: 0 auto;
@@ -144,8 +148,7 @@ body {
 
 main{
     position: relative;
-    top: 70px;
-    padding-top: 60px;
+    padding-top: 130px;
 }
 
 /* Container Cards */
@@ -252,4 +255,44 @@ main{
 .discount_price{
     color: grey;
     font-weight: 400;
+}
+
+/* Footer */
+
+.footer{
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer .flex_start{
+    text-align: left;
+}
+
+.footer .flex_end{
+    text-align: right;
+}
+
+.heading_footer{
+    margin-bottom: 10px;
+}
+
+.container_link_footer a{
+    margin-right: 20px;
+}
+
+.container_link_footer a:last-child{
+    margin-right: 0;
+}
+
+.container_link_footer span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fa-brands{
+    color: #fff;
+    margin-left: 10px;
 }
