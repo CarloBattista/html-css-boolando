@@ -15,6 +15,18 @@ body {
 
 /* Utility */
 
+.cText-white{
+    color: #fff;
+}
+
+.cText-black{
+    color: #1A1A1A;
+}
+
+.cText-red{
+    color: #e50914;
+}
+
 .bg-white{
     background-color: #fff;
 }
@@ -27,6 +39,14 @@ body {
     background-color: #FF6900;
 }
 
+.bg-red{
+    background-color: #e50914;
+}
+
+.bg-green{
+    background-color: #4afc39;
+}
+
 .d-flex{
     display: flex;
 }
@@ -35,10 +55,83 @@ body {
     align-items: center;
 }
 
+.jc-start{
+    justify-content: flex-start;
+}
+
 .jc-center{
     justify-content: center;
 }
 
+.jc-end{
+    justify-content: flex-end;
+}
+
 .jc-between{
     justify-content: space-between;
+}
+
+.margin-80{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 70px;
+}
+
+/* Nav */
+
+.listItem{
+    margin-right: 10px;
+}
+
+.listItem:last-child{
+    margin-right: 0;
+}
+
+.listItem a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 300ms ease;
+}
+
+.listItem a:hover{
+    color: #d8d8d8;
+}
+
+/* Logo Site */
+
+.logoSite{
+    width: 134px;
+}
+
+/* Box Icons */
+
+.box_icon{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.box_icon:last-child{
+    margin-right: 0;
+}
+
+.fa-solid,
+.fa-regular{
+    font-size: 16px;
+    color: #fff;
+    transition: transform 300ms ease;
+}
+
+.fa-solid:hover,
+.fa-regular:hover{
+    transform: scale(1.1);
 }
