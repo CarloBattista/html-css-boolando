@@ -15,6 +15,10 @@ body {
 
 /* Utility */
 
+.line-through{
+    text-decoration: line-through;
+}
+
 .cText-white{
     color: #fff;
 }
@@ -44,7 +48,7 @@ body {
 }
 
 .bg-green{
-    background-color: #4afc39;
+    background-color: #1ed00e;
 }
 
 .d-flex{
@@ -134,4 +138,49 @@ body {
 .fa-solid:hover,
 .fa-regular:hover{
     transform: scale(1.1);
+}
+
+/* Main */
+
+main{
+    position: relative;
+    top: 70px;
+    margin: 60px;
+}
+
+/* Container Cards */
+
+.card_product{
+    width: calc(100% / 3);
+    cursor: pointer;
+}
+
+.inner_card{
+    position: relative;
+    width: 450px;
+    height: auto;
+}
+
+.img_product{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.box_love{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
