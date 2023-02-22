@@ -145,20 +145,47 @@ body {
 main{
     position: relative;
     top: 70px;
-    margin: 60px;
+    padding-top: 60px;
 }
 
 /* Container Cards */
+.container_cards{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .card_product{
-    width: calc(100% / 3);
+    margin-bottom: 60px;
     cursor: pointer;
 }
 
 .inner_card{
     position: relative;
-    width: 450px;
-    height: auto;
+    width: 390px;
+    height: 550px;
+}
+
+.static_image{
+    position: relative;
+    z-index: 1;
+    transition: opacity 300ms ease;
+}
+
+.hover_image{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.inner_card:hover .static_image{
+    opacity: 0;
+}
+
+.inner_card:hover .hover_image{
+    opacity: 1;
 }
 
 .img_product{
@@ -169,18 +196,60 @@ main{
 
 .overlay{
     position: absolute;
+    z-index: 5;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .7);
 }
 
 .box_love{
-    display: inline-block;
     position: absolute;
     right: 0;
     top: 0;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.box_love .fa-heart{
+    color: #1A1A1A;
+}
+
+.container_adv{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 20px 0;
+}
+
+.info_ca{
+    padding: 3px 10px;
+    margin-right: 10px;
+}
+
+.info_ca:last-child{
+    margin-right: 0;
+}
+
+.info_product{
+    margin-top: 10px;
+}
+
+.brand{
+    color: grey;
+    font-weight: 400;
+}
+
+.actual_price{
+    font-weight: 600;
+}
+
+.discount_price{
+    color: grey;
+    font-weight: 400;
 }
