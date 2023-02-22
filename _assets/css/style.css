@@ -12,3 +12,33 @@ body {
     background-color: #fff;
     color: #000;
 }
+
+/* Utility */
+
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-black{
+    background-color: #1A1A1A;
+}
+
+.bg-orange{
+    background-color: #FF6900;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
