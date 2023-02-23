@@ -148,7 +148,8 @@ body {
 
 main{
     position: relative;
-    padding-top: 130px;
+    top: 70px;
+    margin-top: 60px;
 }
 
 /* Container Cards */
@@ -262,6 +263,7 @@ main{
 .footer{
     position: relative;
     z-index: 999;
+    bottom: -70px;
     width: 100%;
     padding: 20px 0;
 }
